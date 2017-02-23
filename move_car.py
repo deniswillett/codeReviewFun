@@ -1,7 +1,11 @@
+# Descriptive Header
+
 directions = ['N','E','S','W'] 
 movement = {'N': (0,1), 'E': (1,0), 'S': (0,-1), 'W':(-1,0)}
 commands = {'L': 'turn_left', 'R': 'turn_right', 'M': 'move'}
 
+
+# List comprehensions seem to be recomended in these situations
 GRID_MAX_X, GRID_MAX_Y = map(int, raw_input().split())
 
 first_vehicle_x = None
@@ -38,6 +42,13 @@ for command in vehicle_one_commands:
 
 first_vehicle_x = vehicle_one.x
 first_vehicle_y = vehicle_one.y
+
+'''
+User interface might benefit from more refined prompting
+Not everyone is going to remember the readme 
+and some examples may be useful...
+'''
+
 
 
 vehicle_two_pos = raw_input().split()
