@@ -28,6 +28,7 @@ class Vehicle():
         new_x = self.x + movement[self.dir][0]
         new_y = self.y + movement[self.dir][1]
 
+        #below not needed...
         if new_x != first_vehicle_x or new_y != first_vehicle_y:
             if new_x in xrange(GRID_MAX_X+1):
                 self.x = new_x
