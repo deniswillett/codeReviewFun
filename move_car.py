@@ -9,6 +9,8 @@ commands = {'L': 'turn_left', 'R': 'turn_right', 'M': 'move'}
 # List comprehensions seem to be recomended in these situations
 GRID_MAX_X, GRID_MAX_Y = map(int, raw_input().split())
 
+
+# Different structure for multiple vehicles...
 first_vehicle_x = None
 first_vehicle_y = None
 
@@ -18,6 +20,7 @@ class Vehicle():
         self.y = y
         self.dir = face
 
+        #naming dir might not be a good name...
     def turn_left(self):
         self.dir = directions[(directions.index(self.dir)-1)%len(directions)]
 
